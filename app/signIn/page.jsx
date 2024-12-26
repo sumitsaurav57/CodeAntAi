@@ -120,7 +120,7 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full p-5 ">
+            <div className="w-full  p-5 ">
               {type == "SAAS" ? <SAAS /> : <SELFHOSTED />}
             </div>
           </div>
@@ -134,13 +134,13 @@ const page = () => {
 function SAAS() {
   return (
     <div className="w-full flex flex-col h-full gap-3  justify-center items-center">
-      <div className="flex w-3/5 justify-center border-2 py-3 border-gray-300 rounded-lg items-center gap-2">
+      <div className="flex md:w-3/5 w-11/12 justify-center border-2 py-3 border-gray-300 rounded-lg items-center gap-2">
         <div className="flex">
           <Image height={20} width={20} src={githubLogo} alt="githubLogo" />
         </div>
         <div>GitHub</div>
       </div>
-      <div className="flex w-3/5 justify-center border-2 py-3 border-gray-300 rounded-lg items-center gap-2">
+      <div className="flex w-11/12  md:w-3/5 justify-center border-2 py-3 border-gray-300 rounded-lg items-center gap-2">
         <div className="flex">
           <Image
             height={20}
@@ -151,13 +151,13 @@ function SAAS() {
         </div>
         <div>BitBucket</div>
       </div>
-      <div className="flex w-3/5 justify-center border-2 py-3 border-gray-300 rounded-lg items-center gap-2">
+      <div className="flex md:w-3/5 w-11/12 justify-center border-2 py-3  border-gray-300 rounded-lg items-center gap-2">
         <div className="flex">
           <Image height={20} width={20} src={azureLogo} alt="azureLogo" />
         </div>
         <div>Azure Devops</div>
       </div>
-      <div className="flex w-3/5 justify-center border-2 py-3 border-gray-300 rounded-lg items-center gap-2">
+      <div className="flex md:w-3/5 w-11/12 justify-center border-2 py-3 border-gray-300 rounded-lg items-center gap-2">
         <div className="flex">
           <Image height={20} width={20} src={gitlabLogo} alt="gitlabLogo" />
         </div>
@@ -169,13 +169,13 @@ function SAAS() {
 function SELFHOSTED() {
   return (
     <div className="w-full flex flex-col h-full gap-3  justify-center items-center">
-      <div className="flex w-3/5 justify-center border-2 py-3 border-gray-300 rounded-lg items-center gap-2">
+      <div className="flex md:w-3/5 w-11/12 justify-center border-2 py-3 border-gray-300 rounded-lg items-center gap-2">
         <div className="flex">
           <Image height={20} width={20} src={gitlabLogo} alt="gitlabLogo" />
         </div>
         <div>GitHub</div>
       </div>
-      <div className="flex w-3/5 justify-center border-2 py-3 border-gray-300 rounded-lg items-center gap-2">
+      <div className="flex md:w-3/5 w-11/12 justify-center border-2 py-3 border-gray-300 rounded-lg items-center gap-2">
         <div className="flex">
           <Image height={20} width={20} src={keyLogo} alt="keytLogo" />
         </div>
