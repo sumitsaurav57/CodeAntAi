@@ -11,7 +11,7 @@ import supportLogo from "../assets/phone.png";
 import searchLogo from "../assets/search.png";
 import barsLogo from "../assets/bars.png";
 import closeLogo from "../assets/close.png";
-import signInLogo from "../assets/sign-out.png";
+import signOutLogo from "../assets/sign-out.png";
 import Image from "next/image";
 
 
@@ -89,16 +89,16 @@ const Navbar = () => {
                 <div className="text-gray-800">Settings</div>
               </div>
             </div>
-            <div>
+            <div className="flex flex-col">
               <div className="rounded-lg p-3 flex items-center gap-2">
                 <div>
                   <Image src={supportLogo} alt="booklogo" />
                 </div>
                 <div className="text-gray-800">Support</div>
               </div>
-              <div className="rounded-lg p-3 flex items-center gap-2">
+              <div className="rounded-lg p-3  pb-8 flex items-center gap-2">
                 <div>
-                  <Image src={signInLogo} alt="settingslogo" />
+                  <Image src={signOutLogo} alt="signOutlogo" />
                 </div>
                 <div className="text-gray-800">LogOut</div>
               </div>
