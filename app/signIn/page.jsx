@@ -81,7 +81,7 @@ const page = () => {
           </div>
         </div>
         <div className="  flex flex-col justify-center  items-center">
-          <div className=" bg-white border-2 border-gray-300 h-4/5 w-4/5 rounded-lg shadow-lg">
+          <div className=" bg-white border-2 flex flex-col border-gray-300 h-4/5 w-4/5 rounded-lg shadow-lg">
             <div className="w-full flex flex-col justify-center items-center border-b-2 border-gray-300">
               <div className="flex text-xl justify-center items-end gap-3 p-5">
                 <div>
@@ -120,7 +120,7 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full  p-5 ">
+            <div className="w-full flex grow  p-5 ">
               {type == "SAAS" ? <SAAS /> : <SELFHOSTED />}
             </div>
           </div>
@@ -133,7 +133,7 @@ const page = () => {
 
 function SAAS() {
   return (
-    <div className="w-full flex flex-col h-full gap-3  justify-center items-center">
+    <div className="w-full flex  flex-col h-full gap-3  justify-center items-center">
       <div className="flex md:w-3/5 w-11/12 justify-center border-2 py-3 border-gray-300 rounded-lg items-center gap-2">
         <div className="flex">
           <Image height={20} width={20} src={githubLogo} alt="githubLogo" />
@@ -175,7 +175,7 @@ function SELFHOSTED() {
         </div>
         <div>GitHub</div>
       </div>
-      <div className="flex md:w-3/5 w-11/12 justify-center border-2 py-3 border-gray-300 rounded-lg items-center gap-2">
+      <div className="flex md:w-3/5 w-11/12  justify-center border-2 py-3 border-gray-300 rounded-lg items-center gap-2">
         <div className="flex">
           <Image height={20} width={20} src={keyLogo} alt="keytLogo" />
         </div>
